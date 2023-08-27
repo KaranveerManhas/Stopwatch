@@ -54,9 +54,33 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 20px 65px;
+    padding: 20px 45px;
     font-size: 20px;
     width: 95%;
+}
+
+/* Adding hr, min and sec to their corresponding display elements */
+#hr::after {
+    content: "hr";
+    margin-left: 2px;
+    font-size: 12px;
+    color: rgb(124, 124, 124);
+}
+
+#min::after {
+    content: "min";
+    margin-left: 2px;
+    font-size: 12px;
+    color: rgb(124, 124, 124);
+
+}
+
+#sec::after {
+    content: "sec";
+    margin-left: 2px;
+    font-size: 12px;
+    color: rgb(124, 124, 124);
+
 }
 
 /* Setting fixed width of h2 elements because I realized that the space 
@@ -64,7 +88,7 @@ between elements was changing due to varying width of the h2 elements as the tim
 changing */
 
 .timer-container h2 {
-    width: 35px;
+    width: 45px;
 }
 
 /* The colons wasn't centered, so decided to give it a negative margin */
